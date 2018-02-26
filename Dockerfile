@@ -1,5 +1,7 @@
 FROM wordpress:cli
 
+USER root
+
 RUN set -x \
     && deluser www-data \
     && addgroup -g 500 -S www-data \
